@@ -1,0 +1,28 @@
+/*Center the About Page */
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 200px;
+}
+
+/*Add Underline to Title */
+h1 {
+    text-decoration: underline;
+}
+
+/*Image Rejust */
+.image-about {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Center Text */
+.about-body {
+    position: relative;
+    justify-content: center;
+    margin: 1% 25%;
+    left: 1%;
+    font-size: 18px;
+}

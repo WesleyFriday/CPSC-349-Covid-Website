@@ -1,0 +1,82 @@
+/*Body */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    min-height: 1800px;
+
+    color: black;
+}
+
+/*Navbar */
+.navbar {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+.nav-item,
+.nav-link {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+/*Navbar hover */
+li a:hover:not(.active) {
+    background-color: grey;
+    color: white;
+}
+
+/*Search Bar */
+input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+/*Search Bar Container */
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Serch Bar Hover */
+.search-container button:hover {
+    background: #ccc;
+}
+
+/*Footer */
+footer {
+    position: fixed;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+}
+
+.bot-nav-item {
+    color: black;
+    list-style-type: none;
+}

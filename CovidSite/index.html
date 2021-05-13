@@ -45,8 +45,8 @@
                 <div class ="DocBtns">
                     <button class="Btns" onClick="document.getElementById('currentCases').scrollIntoView();">Cases</button>
                     <button class="Btns" onClick="document.getElementById('changes').scrollIntoView();">Changes</button>
-                    <button class="Btns">Spread</button>
-                    <button class="Btns">Predictions</button>
+                    <button class="Btns" onClick="document.getElementById('spread').scrollIntoView();">Spread</button>
+                    <button class="Btns" onClick="document.getElementById('prediction').scrollIntoView();">Predictions</button>
                 </div>
             </div>      
         </div>
@@ -78,9 +78,34 @@
         <!-- recent changes from the previous day, and/or history of changes in a graph -->
         <!-- currently no real data -->
         <div class="Changes" id="changes">
-            <h2 class="changesTitle">Changes from Previous Four Days</h2>
+            <h2 class="changesTitle">Changes from Previous Five Days</h2>
             <div class="changesGraph" id="chart_div" style="width: 900px; height: 500px;"></div>
         </div>
+
+        <div class="Spread" id="spread">
+            <h2 class="spreadTitle">Current State of Spread by Geographical Location</h2>
+            <!-- current state of spread in a table by geographical location -->
+            <div class="spreadTable">
+                <h3>Table</h3>
+            </div>
+            <!-- current state in a graph which updates as user selects a geographical region -->
+            <div class="spreadGraph">
+                <h3>Graph</h3>
+            </div>
+        </div>
+
+        <!-- prediction/rate of change (doubling every 2 hours, or havling every 4 days)-->
+        <div class="prediction" id="prediction">
+            <h2>Predictions/Rate of Change</h2>
+            
+            <!-- predicted actual cases (not just confirmed) -->
+            <div class="actualPrediction" id="actualPrediction">
+                <h3>Prediction/Rate of Change of Actual Cases</h3>
+            </div>
+        </div>
+
+
+
     </div>
 
     <!--Footer-->

@@ -85,6 +85,12 @@ h2 {
     padding-top: 45px;
 }
 
+.h3 {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 45px;
+}
+
 .content {
     position: relative;
     display: flex;
@@ -198,5 +204,32 @@ tbody, td {
 }
 
 .changesGraph {
+    margin: auto;
+}
+
+/* SPREAD */
+.Spread {
+    padding-top: 40px;
+    margin: auto;
+}
+
+.spreadTable {
+    text-align: center;
+    margin: auto;
+}
+
+.spreadGraph {
+    text-align: center;    
+    margin: auto;
+}
+
+/* PREDICTION */
+.prediction {
+    padding-top: 40px;
+    margin: auto;
+}
+
+.actualPrediction {
+    padding-top: 20px;
     margin: auto;
 }

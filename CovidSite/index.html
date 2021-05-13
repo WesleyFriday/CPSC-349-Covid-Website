@@ -7,8 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">     
     <link rel="stylesheet" type="text/css" href="styles/index.css">
-
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
     <title>Covid Map Central</title>
 </head>
 <!--Navigation-->
@@ -31,8 +34,54 @@
         </ul>
     </nav>
 
+    <div class="content">
+        <div class="header">
+            <div class="title">
+                <img class="icon" src="images/virusIcon.webp">
+                <h1 class="headTitle">COVID MAP CENTRAL</h1>
+            </div>
 
+            <div class="BtnNav">
+                <div class ="DocBtns">
+                    <button class="Btns" onClick="document.getElementById('currentCases').scrollIntoView();">Cases</button>
+                    <button class="Btns" onClick="document.getElementById('changes').scrollIntoView();">Changes</button>
+                    <button class="Btns">Spread</button>
+                    <button class="Btns">Predictions</button>
+                </div>
+            </div>      
+        </div>
 
+        <!-- cumulative, confirmed, active, recovered, and died cases-->
+        <!-- currently no real data -->
+        <div class="currentCases" id="currentCases">
+            <h2 class="casesTitle">Current Coronavirus Cases</h2>
+            <table class="curCasesTable">
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Closed</th>
+                        <th>Recovered</th>
+                        <th>Died</th>
+                        <th>Cumulative</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>18,833,133</td>
+                    <td>142,266,442</td>
+                    <td>138,920,796</td>
+                    <td>3,345,646</td>
+                    <td>161,099,575</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- recent changes from the previous day, and/or history of changes in a graph -->
+        <!-- currently no real data -->
+        <div class="Changes" id="changes">
+            <h2 class="changesTitle">Changes from Previous Four Days</h2>
+            <div class="changesGraph" id="chart_div" style="width: 900px; height: 500px;"></div>
+        </div>
+    </div>
 
     <!--Footer-->
     <footer>
@@ -43,5 +92,6 @@
         </div>
     </footer>
 </body>
+
 
 </html>

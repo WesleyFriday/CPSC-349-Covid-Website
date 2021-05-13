@@ -2,10 +2,9 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;    
     width: 100%;
-    min-height: 1800px;
-
+    min-height: 100%;
     color: black;
 }
 
@@ -68,8 +67,7 @@ input[type=text] {
 
 /*Footer */
 footer {
-    position: fixed;
-    flex-direction: column;
+    position: relative;
     text-align: center;
     width: 100%;
     bottom: -1px;
@@ -79,4 +77,126 @@ footer {
 .bot-nav-item {
     color: black;
     list-style-type: none;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 45px;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 300px;
+    padding-bottom: 100px;
+    width: 80%;
+    top: 150px;
+
+    background-color: rgba(89, 102, 155, 0.179);
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.icon {
+    height: 80px;
+    width: 80px;
+    padding-right: 15px;
+}
+
+.headTitle {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 25px;
+    background-color: white;
+}
+
+.BtnNav {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    border-top: 1px solid #909090;
+    border-bottom: 1px solid #909090;
+    background-color: white;
+}
+
+.DocBtns {
+    margin: auto;
+}
+
+.Btns {
+    display: inline;
+    padding: 15px;
+    width: 120px;
+    vertical-align: middle;
+    font-size: large;
+    border: white;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Btns:hover {
+    background-color: #8390c7;
+    color: white;
+    cursor: pointer;
+}
+
+/* CURRENT CASES */
+.currentCases {
+    margin: auto;
+}
+
+.curCasesTable {
+    margin: auto;
+    width: 900px;
+	border-collapse: collapse;
+	overflow: hidden;
+    background-color: white;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 15px;
+	color: rgb(46, 44, 44);
+}
+
+th {
+    text-align: left;
+}
+
+thead, th {
+    font-size: 22px;
+    background-color: #8390c7;
+    color: white;
+}
+
+tbody, td {
+    font-size: 22px;
+	position: relative;
+}
+
+/* RECENT CHANGES */
+.Changes {
+    padding-top: 40px;
+    margin: auto;
+}
+
+.changesGraph {
+    margin: auto;
 }

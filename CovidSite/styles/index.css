@@ -207,6 +207,10 @@ tbody, td {
     margin: auto;
 }
 
+.currentCases {
+    margin: auto;
+}
+
 /* SPREAD */
 .Spread {
     padding-top: 40px;
